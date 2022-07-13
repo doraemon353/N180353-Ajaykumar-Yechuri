@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="external.css">
+    <link rel="stylesheet" href="css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div>
+        <div>
+                <div class="main">
+                    <div class="h1">
+                        <p class="h2">Sign Up</p>   
+                       </div>
+                <div class="main2">
+                <form action="ajay.php" target="_blank" method="post" onsubmit="return Name();" id="form">
+                    <table >
+                        <tr>
+                            <td class="p1">
+                                Firstname
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cd">
+                                <input type="text" id="first" placeholder="Enter Firstname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                Middlename
+                            </td>
+                        </tr>
+                            <tr>
+                                <TD class="cd">
+                                    <input type="text" id="middle" placeholder="Enter Middlename">
+                                </TD>
+                            </tr>
+                            <tr>
+                                <td class="p1">
+                                    Lastname
+                                </td>
+                            </tr>
+                        <tr>
+                            <TD class="cd">
+                                <input type="text" id="last" placeholder="Enter Lastname">
+                            </TD>
+                        </tr>
+                        
+                        <tr>
+                            <td class="p1">
+                               User Fullname
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cd">
+                                <input type="text" id="fullname" readonly placeholder="Fullname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                Date Of Birth
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="date"  id="date"  onchange="age()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                Age of the user
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cd">
+                                <input type="text" id="age1" placeholder="Age of the user">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                User G-mail
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cd">
+                                <input type="text" id="mail" placeholder="ex:myname@exxample.com"><label id="e2" style="visibility:hidden;">Invalid E-mail</label> 
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                Country
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                <select id="num">
+                                    <option id="num2">Select Country</option>
+                                    <option value="india">Inidia</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <TD class="CD">
+                                <INput type="text" id="nu" placeholder="Enter Phonenumber"></INput>
+                            </TD>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                User Password
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cd">
+                                <input type="password" id="password" placeholder="Enter Password"><i class="fa fa-eye" aria-hidden="true" onclick="show()" id="eye"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                               Student Hobies 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='cd' colspan="2">
+                                <input type="text" id="hobbi" placeholder="Add your Hobbies">
+                                <button id="button">Add</Button></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p2">
+                                <ul id="lists"  >
+                                    <li>Watching Movies<button class="remove">Remove</button></li>
+                                    <li>Listening Songs<button class="remove">Remove</button></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                Upload User Pic
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="p1">
+                                <input type="file" id="file" accept="image/*"><label id="error" style="visibility: hidden;">File size is too big</label>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="p1">
+                                <input type="checkbox" id="c"><p style="display:inline;">I agree to the <a href="#">terms&conditions </a>of university</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p1">
+                                <input type="submit" id="sub" value="Submit">
+                            </td>
+                            <td>
+                                <input type="reset" id="reset" value="Clear" onclick="confirmation()">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <DIV><a href="#"> <i class="fa-brands fa-facebook" id="cg"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" id="cg2"></i></a>
+                     <a href="#"><i class="fa-brands fa-linkedin" id="cg3"></i></a>
+                     
+                 </DIV>
+                 <div>
+                    <p class="p6">Or Already Account?</p>
+                </div>
+                <div class="b">
+                    <a href="Login.html" class="a" target="_blank">LOGIN</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="form1.js"></script>
+    <script src="hobbies.js"></script>
+    <script src="checking.js"></script>
+</body>
+</html>
